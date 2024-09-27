@@ -1,2 +1,28 @@
-package PACKAGE_NAME;public class Main {
+public class Main {
+
+    public static void main(String[] args) {
+        printFactors(6);
+        printFactors(32);
+        printFactors(10);
+        printFactors(-1);
+
+    }
+
+    private static void printFactors(int number) {
+        // Check if number is negative. If so print "Invalid Value"
+
+        if (number < 0) {
+            System.out.println("Invalid Value");
+        }
+
+        for (int i = 1; i <= number; i++) {
+            if (number % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+
+
+    }
+
 }
